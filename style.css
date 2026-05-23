@@ -1,0 +1,296 @@
+/* Premium Dark Mode Variables */
+:root {
+    --bg-main: #0a0a0a; 
+    --bg-alt: #141414; 
+    --text-dark: #f5f5f5; 
+    --text-light: #999999; 
+    --accent-red: #bc002d; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-red);
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
+    /* IMPORTANT: Tell him to give you a killer cover photo for this */
+    background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 0.6)), url('portfolio-cover.jpg') center/cover no-repeat;
+}
+
+.hero-kanji-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.05); 
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+}
+
+.hero-content {
+    background: transparent; 
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    color: #ffffff; 
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8); 
+}
+
+.hero h1 {
+    font-size: 5rem; 
+    margin-bottom: 0.5rem;
+    letter-spacing: -2px; 
+    line-height: 1.1;
+}
+
+.hero p {
+    color: rgba(255, 255, 255, 0.85); 
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+/* Sections */
+.section {
+    padding: 8rem 5%;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header p {
+    color: var(--text-light);
+}
+
+.bg-alt {
+    background-color: var(--bg-alt);
+}
+
+.jp-accent {
+    display: block;
+    color: var(--accent-red);
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+/* Client Profile Section (About Me) */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.profile-image-wrapper {
+    flex: 1;
+    max-width: 400px;
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.profile-bio {
+    flex: 1;
+}
+
+.profile-bio h3 {
+    font-size: 2.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.profile-bio .role {
+    color: var(--accent-red);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.profile-bio p {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+}
+
+/* Activity 1: Feature Layout */
+.feature-layout {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.feature-image img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.feature-text {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.feature-text p {
+    color: var(--text-light);
+    margin-top: 1rem;
+}
+
+/* Activity 2: Split Layout */
+.split-layout {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.split-text, .split-image {
+    flex: 1;
+}
+
+.split-text p {
+    color: var(--text-light);
+    margin-top: 1rem;
+}
+
+.split-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Activity 3: Grid Layout */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: translateY(-5px);
+}
+
+.caption {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .profile-container, .split-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-image-wrapper, .split-text, .split-image {
+        max-width: 100%;
+    }
+}
