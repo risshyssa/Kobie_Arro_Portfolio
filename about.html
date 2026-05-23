@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">写真 <span>Portfolio</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="activity1.html">Place</a></li>
+      <li><a href="activity2.html">People</a></li>
+      <li><a href="activity3.html">Hidden</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+
+  <section class="about-hero fade-in">
+    <p class="hero-eyebrow">About Me</p>
+    <h1>The Person<br /><em>Behind the Lens</em></h1>
+  </section>
+
+  <section class="about-body">
+    <div class="about-grid">
+      <div class="about-photo fade-in">
+        <div class="about-placeholder">
+          <span class="jp-char">私</span>
+          <p>profile-photo.jpg</p>
+        </div>
+      </div>
+      <div class="about-text fade-in">
+        <p class="section-tag">Introduction</p>
+        <h2>Hi, I'm <em>[Your Name]</em></h2>
+        <p>I'm a travel photographer passionate about capturing the world in all its complexity — from the grandeur of iconic landmarks to the quiet dignity of everyday life. My camera is my journal, and every photo is an entry.</p>
+        <p>Through this portfolio, I share three photo activities that shaped how I see travel: the stories hidden in places, the richness of people and culture, and the unexpected beauty lurking in ordinary corners of the world.</p>
+        <p>Photography, for me, is less about technique and more about attention — slowing down enough to notice what most people walk past.</p>
+
+        <div class="about-details">
+          <div class="detail-item">
+            <span class="detail-label">Name</span>
+            <span class="detail-val">[Your Name]</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Course</span>
+            <span class="detail-val">[Course & Section]</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">School</span>
+            <span class="detail-val">[School Name]</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Camera</span>
+            <span class="detail-val">[Camera / Phone Used]</span>
+          </div>
+        </div>
+
+        <a href="activity1.html" class="btn" style="margin-top:2rem; display:inline-block;">See the Work →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Travel Photography Portfolio &copy; 2025</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
